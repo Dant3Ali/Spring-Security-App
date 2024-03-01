@@ -1,7 +1,7 @@
 server:
   port: 8189
 jwt:
-  secret: sdqSFvwEfqeBwt1sfdvsdfv132r134123easdvfsdfvfdsbsfdq43r1234234qsfasdvsdfvr13SdfVwt253FwRbsDfvwq34
+  secret: jwt-secret-key
   lifetime: 864000000
 spring:
   jpa:
@@ -22,7 +22,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres?currentSchema=lab4
     username: postgres
-    password: 08232005
+    password: postgres
   flyway:
     enabled: true
     locations: classpath:db/migration
