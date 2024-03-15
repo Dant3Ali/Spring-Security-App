@@ -80,13 +80,8 @@ public class AuthControllerTest {
                 String.class
         );
 
-        // Проверьте, что HTTP-код ответа соответствует ожидаемому
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
 
-        // Дополнительные проверки могут быть добавлены в зависимости от вашего функционала
-        // Например, можно проверить токен в ответе или другие детали
-
-        // Пример: Проверка наличия токена в ответе
         String responseBody = responseEntity.getBody();
         assertTrue(responseBody.contains("token"));
     }
